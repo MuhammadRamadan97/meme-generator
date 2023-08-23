@@ -4,37 +4,37 @@
 
 body {
   margin: 0;
+  display: grid;
 }
+
 .header {
   display: flex;
-  align-items: center;
+  justify-content: space-around;
   color: #fff;
+  width: 100%;
   background: linear-gradient(90deg, #672280 0%, #a626d3 100%);
+  border: rgb(203, 31, 209) 3px solid;
 }
 .header > img {
-  min-width: 70px;
+  min-width: 80px;
   max-width: 8%;
-  height: auto;
+
   padding: 1em;
-  margin-left: 1em;
 }
 .header-title {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   font-family: Karla;
 }
-.header-subtitle {
-  font-family: Inter;
-  font-size: 0.9rem;
-  margin-left: auto;
-  padding-right: 2em;
-}
+
 .form {
   display: grid;
-  grid-template: 6vh 6vh / 5fr 5fr 1fr;
+  grid-template: 10% 10% 10% / 1fr 1fr;
   gap: 17px;
   width: 82%;
   margin: 0 auto;
   margin-top: 3em;
+  height: 100%;
+  margin-right: 3em;
 }
 
 .form--input {
@@ -60,9 +60,11 @@ body {
   margin: 0 auto;
   position: relative;
   max-height: 60vh;
+  max-width: 100%;
 }
 .meme-img {
   height: 95%;
+  max-width: 96%;
 }
 .top-text,
 .bottom-text {
@@ -70,7 +72,7 @@ body {
   left: 50%;
   transform: translate(-50%, 0);
   font-family: impact, sans-serif;
-  font-size: 3em;
+  font-size: 2rem;
   text-transform: uppercase;
   color: white;
   letter-spacing: 1px;
@@ -89,5 +91,13 @@ body {
   align-self: center;
   border: none;
   height: 90%;
-  width: 100%;
+  width: 30%;
+  justify-self: center;
+  grid-column: 1/-1;
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+  html {
+    font-size: 12px;
+  }
 }

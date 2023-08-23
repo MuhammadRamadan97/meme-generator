@@ -1,9 +1,8 @@
 export default function Header() {
     return (
         <header className="header">
-            <img src="..\src\images\troll-face.png" />
+            <img src="https://media.tenor.com/KNpiKw5Y2lkAAAAi/sagithegavar-pc.gif" />
             <h2 className="header-title">Meme Generator</h2>
-            <h4 className="header-subtitle">React Course - Project 3</h4>
         </header>
     )
 }
